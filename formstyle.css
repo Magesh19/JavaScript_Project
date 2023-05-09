@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up Form</title>
+	<style>
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+			background-color: #f2f2f2;
+		}
+
+		h1 {
+			text-align: center;
+			margin-top: 50px;
+			color: #555;
+		}
+
+		form {
+			border: 1px solid #ccc;
+			background-color: #fff;
+			padding: 20px;
+			max-width: 500px;
+			margin: auto;
+		}
+
+		input[type=text], input[type=password], input[type=email], input[type=tel] {
+			width: 100%;
+			padding: 15px;
+			margin: 5px 0 22px 0;
+			display: inline-block;
+			border: none;
+			background: #f1f1f1;
+			border-radius: 4px;
+			box-sizing: border-box;
+			font-size: 16px;
+			font-weight: 400;
+			color: #555;
+		}
+
+		input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=tel]:focus {
+			background-color: #ddd;
+			outline: none;
+		}
+
+		hr {
+			border: 1px solid #f1f1f1;
+			margin-bottom: 25px;
+		}
+
+		button {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			width: 100%;
+			opacity: 0.9;
+			font-size: 16px;
+			font-weight: 400;
+			letter-spacing: 0.5px;
+			text-transform: uppercase;
+			transition: opacity 0.3s ease-in-out;
+		}
+
+		button:hover {
+			opacity:1;
+		}
+
+		.cancelbtn {
+			background-color: #f44336;
+		}
+
+		.cancelbtn, .signupbtn {
+			float: left;
+			width: 50%;
+		}
+
+		.container {
+			padding: 16px;
+		}
+
+		.clearfix::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+
+		@media screen and (max-width: 300px) {
+			.cancelbtn, .signupbtn {
+				width: 100%;
+			}
+		}
+
+		label {
+			font-size: 16px;
+			font-weight: 400;
+			color: #555;
+			display: block;
+			margin-bottom: 8px;
+		}
+
+		p {
+			font-size: 14px;
+			font-weight: 400;
+			color: #555;
+			margin: 0;
+			padding: 0;
+			margin-bottom: 16px;
+		}
+
+		a {
+			color: #4CAF50;
+			text-decoration: none;
+			transition: color 0.3s ease-in-out;
+		}
+
+		a:hover {
+			color: #2e8b57;
+		}
+
+		.error {
+			color: #f44336;
+			font-size: 14px;
+			font-weight: 400;
+			margin-top: 5px;
+		}
+
+		.success {
+			color: #4CAF50;
+			font-size: 14px;
+			font-weight: 400;
+			margin-top: 5px;

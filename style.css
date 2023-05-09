@@ -1,0 +1,182 @@
+/* Default styles */
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+  }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpeg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+  }
+ 
+
+a.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  background-color: grey;
+  color: black;
+  padding: 30px;
+  margin: 20px;
+  border-radius: 10px;
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+  padding-left: 800px;
+}
+    
+  .fline {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    padding: 20px;
+    margin: 10px;
+  }
+  
+  .fsection {
+    font-size: 2.5rem;
+    text-align: center;
+    color: grey;
+  }
+  
+
+ 
+  .card {
+    /* Add shadows to create the "card" effect */
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 20px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.721);
+    transition: 0.3s;
+    float: left;
+    padding: 20px;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.716);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
+  .container p {
+  margin: 10px 0 0;
+}
+  .section1 {
+    margin-left: 300px;
+    margin-top: 20px;
+  }
+  /* Media queries */
+@media screen and (max-width: 767px) {
+    /* Styles for screens smaller than 768px */
+    .fsection {
+      font-size: 1.5rem;
+    }
+    
+    .card {
+      flex: 1 0 100%;
+      margin: 10px 0;
+    }
+    
+    .topnav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 10px;
+    }
+    
+    .topnav a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+      margin: 0 10px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    /* Styles for screens between 768px and 991px */
+    .fsection {
+      font-size: 2rem;
+    }
+    
+    .card {
+      flex: 1 0 calc(50% - 40px);
+    }
+    
+    .topnav {
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+    
+    .topnav a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+      margin: 0 10px;
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    /* Styles for screens larger than 992px */
+    .fsection {
+      font-size: 2.5rem;
+    }
+    
+    .card {
+      flex: 1 0 calc(33.33% - 40px);
+    }
+    
+    .topnav {
+      display: flex;
+      justify-content: flex-end;
+      padding: 10px;
+    }
+    
+    .topnav a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+      margin: 0 10px;
+    }
+  }
+  
+  
